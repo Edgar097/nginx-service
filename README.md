@@ -74,3 +74,27 @@ Steps:
     
  	Check the version that you want and copy the url http://nginx.org/en/download.html
 
+
+
+Building Dynamic Modules
+
+
+   	1. Fetch the Nginx Source (same as that of production Nginx version)
+	2. Fetch the Module Source
+	3. Build Dynamic Module
+	4. Reference Module Path within nginx configuration
+	
+	Steps:
+	
+	• You need the source file of nginx and the module directory to compile the module
+	Ø apt install git
+	Ø git clone https://github.com/perusio/nginx-hello-world-module 
+	Ø ./configure --add-dynamic-module=/path/module/nginx-hello-world-module (in the source file of nginx, needs to be in the same nginx version)
+	Ø make modules
+	Ø cd /objs
+	Ø Save the module on /etc/nginx/modules/<module> > cp ngx_http_hello_world_module.so /etc/nginx/modules (create de modules directory)
+	• Then load the module in the nginx.conf as:
+		○ load_module /etc/nginx/modules/<module> Example: load_module /etc/nginx/modules/ngx_hello_world_module.so
+		
+If you get a binary error, that means the module is not compatible with the nginx version.
+
