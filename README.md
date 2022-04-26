@@ -72,6 +72,5 @@ Steps:
 		○ Systemd service file -> https://www.nginx.com/resources/wiki/start/topics/examples/systemd/
 		○ With the script **nginx** if you are using "service"
     
- 	Check the version that you want and copy the url
-http://nginx.org/en/download.html![image](https://user-images.githubusercontent.com/76976401/165399171-c1ba5be8-dcb2-47ba-9ce0-bba7703efdac.png)
+ 	Check the version that you want and copy the url http://nginx.org/en/download.html
 
