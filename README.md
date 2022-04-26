@@ -100,3 +100,7 @@ If you get a binary error, that means the module is not compatible with the ngin
 
 Example use: https://github.com/perusio/nginx-hello-world-module
 Uses this nginx version http://nginx.org/download/nginx-1.16.1.tar.gz
+
+
+Security Module
+- https://github.com/nbs-system/naxsi#:~:text=NAXSI%20means%20Nginx%20Anti%20XSS,patterns%20involved%20in%20website%20vulnerabilities.
