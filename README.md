@@ -98,3 +98,4 @@ Building Dynamic Modules
 		
 If you get a binary error, that means the module is not compatible with the nginx version.
 
+Example use: https://github.com/perusio/nginx-hello-world-module
